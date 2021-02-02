@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
 
+import './App.css'
+import background from './assets/HgflTDf.jpg'
+
 function App() {
   const [ projects, setProject ] = useState( ['Curso1', 'Curso2'] );
 
@@ -13,6 +16,8 @@ function App() {
   return (
     <>
       <Header title='Projets'/>
+      <img width={ 300 } src={ background } alt="Bridge"/>
+       
       <ul>
         { projects.map( p => <li key={ p }> { p } </li> ) }
       </ul>
