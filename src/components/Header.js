@@ -3,11 +3,10 @@ import React from 'react';
 /**
  * JSX -> HTML dentro do javascript (Javascript XML).
  */
-function Header({ title, children }) {
+function Header({ title }) {
   return (
     <header>
       <h1>{ title }</h1>
-      { children }
     </header>
   );
 }
