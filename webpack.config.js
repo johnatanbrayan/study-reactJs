@@ -1,13 +1,13 @@
 const path = require('path');
 
 module.exports = {
-  entry: path.resolve(__dirname, 'src', 'index.js'),
+  entry: path.resolve(__dirname, 'frontend', 'src', 'index.js'),
   output: {
-    path: path.resolve(__dirname, 'public'),
+    path: path.resolve(__dirname, 'frontend', 'public'),
     filename: 'bundle.js'
   },
   devServer: {
-    contentBase: path.resolve(__dirname, 'public'),
+    contentBase: path.resolve(__dirname, 'frontend', 'public'),
   },
   module: {
     rules: [

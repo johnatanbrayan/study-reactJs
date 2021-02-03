@@ -3,19 +3,22 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development"
+    "dev": "webpack --mode development",
+    "start": "json-server --watch backend/db.json --port 3333"
   },
   "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
+    "axios": "^0.21.1",
     "babel-cli": "^6.26.0",
     "babel-loader": "^8.2.2",
     "chokidar": "3",
     "core-js": "3",
     "css-loader": "^5.0.1",
     "file-loader": "^6.2.0",
+    "json-server": "^0.16.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "style-loader": "^2.0.0",
@@ -23,6 +26,7 @@
     "webpack-cli": "^4.4.0"
   },
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.12.13",
     "webpack-dev-server": "^3.11.2"
   }
 }
